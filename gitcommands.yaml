@@ -1,0 +1,24 @@
+# clone repository
+git clone https://github.com/donwany/git-tutorials.git
+
+git init
+git status
+git checkout main
+git checkout -b feature
+git add . 
+git commit -m "initial"
+git push origin main
+git pull
+git rebase feature
+
+# switch to feature branch
+git checkout feature
+
+# delete feature branch locally
+git branch -d feature
+
+# delete feature branch remotely
+git push origin --delete feature
+
+# merge feature to main branch
+git merge feature
